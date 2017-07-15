@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Call reverseString('') to reverse any string
 function reverseString(str) {
   /*
@@ -200,8 +199,6 @@ return str.replace(/\w\S*/g, function(txt) { // Checks for a character then zero
 }
 
 titleCase("I'm a little tea pot");
-||||||| merged common ancestors
-=======
 // Call reverseString('') to reverse any string
 function reverseString(str) {
   /*
@@ -403,4 +400,3 @@ return str.replace(/\w\S*/g, function(txt) { // Checks for a character then zero
 }
 
 titleCase("I'm a little tea pot");
->>>>>>> 9d12e8892c65408a867b4b903a7bf5ef69d61f31
