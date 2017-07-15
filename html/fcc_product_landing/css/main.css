@@ -1,0 +1,201 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px
+}
+
+body {
+  background-color: #EEE;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: rgba(255,255,255,.9);
+}
+
+.logo {
+  padding: 1.5em 1.5em .5em .5em;
+}
+
+#title {
+  font-size: 1.5em;
+}
+
+.fa-bars {
+  float: right;
+}
+
+ul {
+  margin-top: 1.5em;
+  list-style: none;
+  margin-left: -1.5em;
+  display: none;
+}
+
+.btn {
+  font-size: 1.2em;
+  margin-bottom: .2em;
+  background-color: rgba(0,0,0,0);
+}
+
+main {
+  padding: 4.5em .5em 2em .5em;
+}
+
+#main-flex {
+  -webkit-display: flex;
+  display: flex;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#email {
+  width: calc(100vw - 10%);
+  max-width: 503.5px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#get-started {
+  background-color: yellow;
+}
+
+.features-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.fa-fire {
+  color: orange;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-bottom: .25em;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.fa-truck {
+  color: orange;
+}
+
+.fa-battery {
+  color: orange;
+}
+
+#youtube-video {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0em;
+}
+
+.product-card {
+  border: 1px solid #000;
+  text-align: center;
+  margin: 1em 0em;
+}
+
+.product-card-top {
+  background-color: #ddd;
+  padding: 1em 0em;
+}
+
+#footer {
+  float: right;
+}
+
+@media only screen and (min-width: 769px) {
+  .logo {
+    float: left;
+  }
+  
+  .fa-bars {
+    display: none;
+  }
+  
+  ul {
+    display: inline;
+    float: right;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  main {
+    padding-top: 5.5em;
+  }
+  
+  #email {
+    width: 50%;
+  }
+  
+  .features-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0em 0em 0em 0em;
+  }
+  
+  .features-image {
+    width: 30%;
+  }
+  
+  .fa-fire {
+    display: inline;
+    margin-left: 60%;
+  }
+  
+  .features-description {
+    width: 70%;
+  }
+  
+  h2 {
+    margin: .2em 0em 0em 0em;
+    font-size: 1.75em;
+    text-align: left;
+  }
+  
+  p {
+    font-size: 1em;
+    text-align: left;
+  }
+  
+  .fa-truck {
+    display: inline;
+    margin-left: 57.05%;
+    color: orange;
+  }
+  
+  .fa-battery {
+    display: inline;
+    margin-left: 56.8%;
+    color: orange;
+  }
+  
+  #product-card-section {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .trombone-title {
+    text-align: center;
+  }
+  
+  .trombone-description {
+    text-align: center;
+  }
+}
