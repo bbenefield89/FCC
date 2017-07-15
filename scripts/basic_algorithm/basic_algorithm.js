@@ -195,7 +195,7 @@ booWho(false);
 // Every new word in str needs to have the first letter capitalized
 function titleCase(str) {
 return str.replace(/\w\S*/g, function(txt) { // Checks for a character then zero or more non-white space
-  return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); // replaces the first char with a CAP letter
+  return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); // Replaces the first char with a CAP letter
 }
 
 titleCase("I'm a little tea pot");
