@@ -1,0 +1,61 @@
+body {
+  background-color: #A9D7D1;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 200%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#form-body {
+  background-color: white;
+  margin: 2%;
+  padding: 2%;
+}
+
+#form-header {
+  font-size: 120%;
+  margin-bottom: 2%;
+}
+
+.rounded {
+  border-radius: 7%;
+  border: 1px solid #cccccc;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  width: 100%;
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 1%;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+/*#role {
+  margin-right: .5%;
+}
+
+.custom-select {
+  margin-bottom: 1%;
+}
+
+.some-space {
+  margin-right: 1.25%;
+}
+
+@media only screen and (max-width: 575px) {
+  label {
+    text-align: left;
+  }
+}*/
