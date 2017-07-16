@@ -400,3 +400,18 @@ return str.replace(/\w\S*/g, function(txt) { // Checks for a character then zero
 }
 
 titleCase("I'm a little tea pot");
+
+/*
+**
+*/
+
+// Remove all falsy values
+function bouncer(arr) {
+  return arr.filter((x) => { // x iterates through arr and only returns values that are not false
+    if (x != false) {
+      return x;
+    }
+  });
+}
+
+bouncer([7, "ate", "", false, 9]);
