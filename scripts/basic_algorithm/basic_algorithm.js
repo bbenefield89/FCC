@@ -415,3 +415,84 @@ function bouncer(arr) {
 }
 
 bouncer([7, "ate", "", false, 9]);
+
+/*
+**
+*/
+
+// Where do I belong
+// Find where num would fit into arr if sorted chronologically and return the index
+function getIndexToIns(arr, num) {
+  var tempArr = [...arr];
+  
+  tempArr.sort(((a, b) => a - b)); // Chronologically sort tempArr
+  
+  for (var i = 0; i < arr.length; i++) { // Iterate through arr, if num is less than return the index
+    if (num <= tempArr[i]) {
+      return i;
+    }
+  }
+  if (i == arr.length) { // If num is larger than any number in arr, it will fall into the last index of arr
+    return i;
+  }
+}
+
+getIndexToIns([40, 60], 50);
+
+/*
+**
+*/
+
+// Mutations
+// Check if arr[0] contains the same characters as arr[1]
+function mutation(arr) {
+  var arrOneStr = arr[0].toLowerCase(); // Transform everything to lower case
+  var arrTwoStr = arr[1].toLowerCase(); // Transform everything to lower case
+  
+  arrOneStr = arrOneStr.split(''); // Split string into an array of every character
+  arrTwoStr = arrTwoStr.split(''); // Split string into an array of every character
+  
+  return arrTwoStr.every(((x) => arrOneStr.indexOf(x) > -1)); // If a character isnt found, return false
+}
+
+mutation(["Mary", "Army"]); // returns true;
+
+/*
+**
+*/
+
+// Chunky Monkey
+/* Write a function that splits an array (first argument) into groups the length of size (second argument) 
+** and returns them as a two-dimensional array.
+*/
+function chunkArrayInGroups(arr, size) {
+  // Initialize some empty arrays for later use
+  var twoDArr = [];
+  var tempArr = [];
+  var continueLoop = 1;
+  
+  while (continueLoop === 1) {
+    // grabs the first index of arr and pushes it into tempArr
+    for (var i = 0; i < size; i++) {
+      if (arr.length >= 1) {
+        console.log(arr.length);
+        tempArr.push(arr[0]);
+        arr.shift();
+      }
+    }
+  
+    var newArr = tempArr.splice(0, size); // Grabs everything from tempArr and places it into newArr
+  
+    twoDArr.push(newArr); // Pushes newArr into twoDArr to create a nested array
+    newArr = []; // Empties newArr so it can receive new values later on without holding onto old values
+    
+    // If arr is empty, end while loop
+    if (arr.length == 0) {
+      continueLoop--;
+    }
+  }
+  
+  return twoDArr;
+}
+
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 4); // returns [[0, 1, 2, 3], [4, 5]]
